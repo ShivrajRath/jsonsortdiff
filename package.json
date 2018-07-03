@@ -1,6 +1,6 @@
 {
   "name": "json-sort-diff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JSON comparison tool, which first sorts the JSON object and then compares them",
   "main": "index.js",
   "scripts": {
