@@ -28,6 +28,7 @@ function diffDisplay(str1, str2) {
 
   display.appendChild(fragment);
 
+  display.classList.remove('h');
   location.hash = '#diff';
 }
 

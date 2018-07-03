@@ -2,9 +2,13 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="JSON diff tool, which first sorts the JSON object and then compares them.">
+  <meta name="keywords" content="diff, compare, sort, json, alphabetically, sort json, sort and diff, sort and compare">
+
   <title>JSON sort and diff</title>
 
   <link rel="stylesheet" href="./app.css">
@@ -16,24 +20,23 @@
   <h1>JSON Sort and Diff</h1>
   <form onsubmit="appSort(event, 't1', 't2')">
     <div class="boxes">
-      <textarea id="t1" class="t" name="jsonabc1" placeholder="Paste your first unsorted JSON here" aria-label="Paste your first unsorted JSON here"
+      <textarea id="t1" class="t" name="jsonabc1" placeholder="Paste your first unsorted JSON here" aria-label="Paste your first JSON here"
         spellcheck="false" required aria-required="true"></textarea>
-      <textarea id="t2" class="t" name="jsonabc2" placeholder="Paste your second unsorted JSON here" aria-label="Paste your second unsorted JSON here"
+      <textarea id="t2" class="t" name="jsonabc2" placeholder="Paste your second unsorted JSON here" aria-label="Paste your second JSON here"
         spellcheck="false" required aria-required="true"></textarea>
     </div>
     <div>
       <input type="submit" class="b" value="SORT and DIFF" data-Was-onclick="sort()">
     </div>
   </form>
-  <p>
-    <pre id="diff"></pre>
-  </p>
-  <p>
-    <h3 class="c">
-      <a href="https://github.com/ShivrajRath/jsonsortdiff" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;
-      <a class="h" target="_blank" href="https://www.buymeacoffee.com/rath">Buy me a coffee</a>&nbsp;&nbsp;&nbsp;
-    </h3>
-  </p>
+
+  <pre class="d h" id="diff">
+  </pre>
+
+  <h3 class="c">
+    <a href="https://github.com/ShivrajRath/jsonsortdiff" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;
+    <a class="s" target="_blank" href="https://www.buymeacoffee.com/rath">Buy me a coffee</a>&nbsp;&nbsp;&nbsp;
+  </h3>
 </body>
 
 </html>

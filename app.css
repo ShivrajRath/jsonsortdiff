@@ -10,6 +10,10 @@ body {
   text-align: center;
 }
 
+.h {
+  display: none;
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -18,7 +22,7 @@ a {
   cursor: pointer;
 }
 
-a.h{
+a.s{
   color: #e6a117;
   border-bottom: 1px solid #e6a117;
 }
@@ -31,7 +35,7 @@ a.h{
   padding: 1%;
   resize: none;
   outline: none;
-  font-size: 1em;
+  font-size: 0.8em;
   text-decoration: none;
   border: 1px solid #000;
   font-family: "Courier New", Courier, monospace;
@@ -47,11 +51,16 @@ a.h{
   border: 1px solid #000;
 }
 
+.d {
+  background-color: #fbfbfb;
+  padding: 20px;
+}
+
 pre{
   display: block;
   font-family: monospace;
   white-space: pre;
-  font-size: 12px;
+  font-size: 0.8em;
 }
 
 @media only screen and (max-width: 768px) {
