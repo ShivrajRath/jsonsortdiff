@@ -1,0 +1,16 @@
+{
+  "name": "json-sort-diff",
+  "version": "1.0.0",
+  "description": "JSON comparison tool, which first sorts the JSON object and then compares them",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify main.js -o bundle.js"
+  },
+  "author": "Shivraj Rath",
+  "license": "MIT",
+  "dependencies": {
+    "diff": "^3.5.0",
+    "jsonabc": "^2.3.1"
+  }
+}

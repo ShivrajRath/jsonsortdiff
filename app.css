@@ -1,0 +1,54 @@
+* {
+  font-family: 'Spectral', serif;
+}
+
+body {
+  padding: 20px 50px;
+}
+
+.c {
+  text-align: center;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+a.h{
+  color: #e6a117;
+  border-bottom: 1px solid #e6a117;
+}
+
+.t,
+.t:focus,
+.t:active {
+  width: 45%;
+  height: 200px;
+  padding: 2%;
+  resize: none;
+  outline: none;
+  font-size: 1em;
+  text-decoration: none;
+  border: 1px solid #000;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.b {
+  font-size: 1em;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  background: none;
+  padding: 1%;
+  border: 1px solid #000;
+}
+
+@media only screen and (max-width: 768px) {
+  .t {
+    width: 100%;
+  }
+}
