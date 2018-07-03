@@ -15,5 +15,5 @@ License: [MIT][]
 
 [json abc]: https://github.com/ShivrajRath/jsonabc "json abc"
 [js diff]: https://github.com/kpdecker/jsdiff "js diff"
-[json sort and diff]: http://novicelab.org/json-sort-and-diff "JSON Sort and Diff"
+[json sort and diff]: http://novicelab.org/jsonsortdiff "JSON Sort and Diff"
 [mit]: https://mit-license.org/2018?c=ShivrajRath
