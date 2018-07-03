@@ -26,6 +26,8 @@ function diffDisplay(str1, str2) {
   });
 
   display.appendChild(fragment);
+
+  location.hash = '#diff';
 }
 
 // app sorting

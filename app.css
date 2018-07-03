@@ -27,8 +27,8 @@ a.h{
 .t:focus,
 .t:active {
   width: 45%;
-  height: 200px;
-  padding: 2%;
+  height: 350px;
+  padding: 1%;
   resize: none;
   outline: none;
   font-size: 1em;
@@ -39,12 +39,19 @@ a.h{
 
 .b {
   font-size: 1em;
-  margin: 0 auto;
+  margin: 20px auto;
   display: block;
   cursor: pointer;
   background: none;
-  padding: 1%;
+  padding: 0.5%;
   border: 1px solid #000;
+}
+
+pre{
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  font-size: 12px;
 }
 
 @media only screen and (max-width: 768px) {

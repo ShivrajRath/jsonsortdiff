@@ -27,6 +27,8 @@ function diffDisplay(str1, str2) {
   });
 
   display.appendChild(fragment);
+
+  location.hash = '#diff';
 }
 
 // app sorting
@@ -43,7 +45,7 @@ function appSort(ev, tid1, tid2) {
     sortStr2 = jsonabc.sort(inputStr2);
 
     document.getElementById(tid1).value = sortStr1;
-    document.getElementById(tid1).value = sortStr2;
+    document.getElementById(tid2).value = sortStr2;
 
     diffDisplay(sortStr1, sortStr2);
   } catch (ex) {
