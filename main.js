@@ -11,6 +11,7 @@ window.appSort = appSort;
 function diffDisplay(str1, str2) {
   var diff = JsDiff.diffChars(str1, str2),
     display = document.getElementById('diff'),
+    noDiff = document.getElementById('no-diff'),
     fragment = document.createDocumentFragment();
 
   diff.forEach(function (part) {
@@ -24,6 +25,16 @@ function diffDisplay(str1, str2) {
       .createTextNode(part.value));
     fragment.appendChild(span);
   });
+
+  display.innerHTML = '';
+
+  if (diff.length === 1 && !diff.removed && !diff.added) {
+    noDiff.classList.remove('h');
+    display.classList.add('h');
+  } else {
+    noDiff.classList.add('h');
+    display.classList.remove('h');
+  }
 
   display.appendChild(fragment);
 

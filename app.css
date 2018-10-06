@@ -22,9 +22,11 @@ a {
   cursor: pointer;
 }
 
-a.s{
-  color: #e6a117;
-  border-bottom: 1px solid #e6a117;
+a.s {
+  border: 1px solid #000;
+  background: #e6a117;
+  padding: 10px;
+  color: #fff;
 }
 
 .t,
@@ -35,7 +37,7 @@ a.s{
   padding: 1%;
   resize: none;
   outline: none;
-  font-size: 0.8em;
+  font-size: 1.2em;
   text-decoration: none;
   border: 1px solid #000;
   font-family: "Courier New", Courier, monospace;
@@ -56,7 +58,7 @@ a.s{
   padding: 20px;
 }
 
-pre{
+pre {
   display: block;
   font-family: monospace;
   white-space: pre;
