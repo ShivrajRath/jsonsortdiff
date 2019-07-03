@@ -1,7 +1,8 @@
 CACHE MANIFEST
-# 2018-07-02:v1.0.2
+# 2019-07-02:v1.0.4
 
 favicon.ico
 index.html
 bundle.js
+diffview.css
 app.css

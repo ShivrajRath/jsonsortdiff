@@ -10,7 +10,7 @@
   "author": "Shivraj Rath",
   "license": "MIT",
   "dependencies": {
-    "diff": "^3.5.0",
+    "jsdifflib": "^1.1.0",
     "jsonabc": "^2.3.1"
   }
 }

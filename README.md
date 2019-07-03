@@ -8,12 +8,13 @@ JSON comparison tool, which first sorts the JSON object and then compares them.
 
 ## Thanks
 
-Uses [json abc][] for sorting and [js diff][] to show the difference
+Uses [json abc][] for sorting and [jsdifflib][] to show the difference
 
 ---
+
 License: [MIT][]
 
 [json abc]: https://github.com/ShivrajRath/jsonabc "json abc"
-[js diff]: https://github.com/kpdecker/jsdiff "js diff"
+[jsdifflib]: https://github.com/cemerick/jsdifflib "js diff"
 [json sort and diff]: http://novicelab.org/jsonsortdiff "JSON Sort and Diff"
 [mit]: https://mit-license.org/2018?c=ShivrajRath
