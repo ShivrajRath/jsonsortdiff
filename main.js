@@ -20,10 +20,9 @@ function diffDisplay(str1, str2) {
     // set the display titles for each resource
     baseTextName: "Base Text",
     newTextName: "New Text",
-    contextSize: 10,
+    contextSize: 10
     //set inine to true if you want inline
     //rather than side by side diff
-    inline: true
   });
 
   display.appendChild(build);

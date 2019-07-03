@@ -21,21 +21,10 @@ function diffDisplay(str1, str2) {
     // set the display titles for each resource
     baseTextName: "Base Text",
     newTextName: "New Text",
-    contextSize: 10,
+    contextSize: 10
     //set inine to true if you want inline
     //rather than side by side diff
-    inline: true
   });
-
-  console.log(build);
-
-  // if (diff.length === 1 && !diff.removed && !diff.added) {
-  //   noDiff.classList.remove("h");
-  //   display.classList.add("h");
-  // } else {
-  //   noDiff.classList.add("h");
-  //   display.classList.remove("h");
-  // }
 
   display.appendChild(build);
 
