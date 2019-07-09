@@ -1,9 +1,12 @@
 * {
   font-family: "Spectral", serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  padding: 20px 50px;
+  padding: 30px;
 }
 
 .c {
@@ -29,15 +32,22 @@ a.s {
   color: #fff;
 }
 
+.text {
+  width: 49%;
+  padding: 1%;
+  border: 1px solid #000;
+  border-bottom: none;
+}
+
 .t,
 .t:focus,
 .t:active {
-  width: 45%;
+  width: 49%;
   height: 350px;
   padding: 1%;
   resize: none;
   outline: none;
-  font-size: 1.2em;
+  font-size: 0.8em;
   text-decoration: none;
   border: 1px solid #000;
   font-family: "Courier New", Courier, monospace;
@@ -68,5 +78,8 @@ pre {
 @media only screen and (max-width: 768px) {
   .t {
     width: 100%;
+  }
+  .texts {
+    display: none;
   }
 }
