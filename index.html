@@ -1,82 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" manifest="manifest.appcache" />
+<head>
+    <meta charset="utf-8" manifest="manifest.appcache"/>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="shortcut icon" href="./favicon.ico" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="JSON compare tool, which first sorts the JSON object and then compares them."
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description"
+          content="JSON compare tool, which first sorts the JSON object and then compares them."
     />
-    <meta
-      name="keywords"
-      content="json compare, json sort and compare, diff, compare, sort, json, alphabetically, sort json, sort and diff, sort and compare"
+    <meta name="keywords"
+          content="json compare, json sort and compare, diff, compare, sort, json, alphabetically, sort json, sort and diff, sort and compare"
     />
 
     <title>JSON abc and diff</title>
-
-    <link rel="stylesheet" href="./app.css" />
-    <link rel="stylesheet" href="./diffview.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./app.css"/>
+    <link rel="stylesheet" href="./diffview.css"/>
     <link
-      href="https://fonts.googleapis.com/css?family=Spectral"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Spectral"
+            rel="stylesheet"
     />
+    <scrip src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></scrip>
     <script src="./bundle.js"></script>
-  </head>
+</head>
 
-  <body>
-    <h1>JSON ABC and Diff</h1>
+<body>
 
-    <form onsubmit="appSort(event, 't1', 't2')">
-      <div class="texts">
-        <input type="text" class="text" placeholder="name" />
-        <input type="text" class="text" placeholder="name" />
-      </div>
-      <div class="boxes">
-        <textarea
-          id="t1"
-          class="t"
-          name="jsonabc1"
-          placeholder="Paste your first unsorted JSON here"
-          aria-label="Paste your first JSON here"
-          spellcheck="false"
-          required
-          aria-required="true"
-        ></textarea>
-        <textarea
-          id="t2"
-          class="t"
-          name="jsonabc2"
-          placeholder="Paste your second unsorted JSON here"
-          aria-label="Paste your second JSON here"
-          spellcheck="false"
-          required
-          aria-required="true"
-        ></textarea>
-      </div>
-      <div>
-        <input
-          type="submit"
-          class="b"
-          value="SORT and COMPARE"
-          data-Was-onclick="sort()"
-        />
-      </div>
-    </form>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">JSON Sort & Diff Tool</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <small>You must pass in valid json to the text boxes or the file uploads</small>
+            <form onsubmit="appSort(event, 't1', 't2')">
+                <div class="texts">
+                    <input type="file" class="text" placeholder="V2" id="input_1"/>
+                    <input type="file" class="text" placeholder="V2" id="input_2"/>
+                </div>
+                <div class="boxes">
 
-    <pre class="d h" id="diff"></pre>
+                    <textarea
+                            aria-label="Paste your first JSON here"
+                            aria-required="true"
+                            class="t"
+                            id="t1"
+                            name="jsonabc1"
+                            placeholder="Paste your first JSON here"
+                            required
+                            spellcheck="false"
+                    ></textarea>
+                    <textarea
+                            aria-label="Paste your second JSON here"
+                            aria-required="true"
+                            class="t"
+                            id="t2"
+                            name="jsonabc2"
+                            placeholder="Paste your second JSON here"
+                            required
+                            spellcheck="false"
+                    ></textarea>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Context Size</span>
+                            </div>
+                            <input aria-describedby="basic-addon1"
+                                   aria-label="Username"
+                                   class="form-control"
+                                   id="contextSize"
+                                   placeholder="10"
+                                   type="text"
+                                   value="10"
+                            >
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Inline Display</span>
+                            </div>
+                            <select class="custom-select" id="inlineSelect">
+                                <option selected>true</option>
+                                <option value="1">false</option>
+                            </select>
+                        </div>
 
-    <h3 class="c">
-      <a href="https://github.com/ShivrajRath/jsonsortdiff" target="_blank"
-        >Github</a
-      >&nbsp;&nbsp;&nbsp;
-      <a class="s" target="_blank" href="https://www.buymeacoffee.com/rath"
-        >Buy me a coffee</a
-      >&nbsp;&nbsp;&nbsp;
-    </h3>
-  </body>
+                    </div>
+
+                    <div class="col text-center">
+                        <br><br>
+                        <input
+                                type="submit"
+                                class="btn btn-primary"
+                                value="SORT and COMPARE"
+                                data-Was-onclick="sort()"
+                        />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <pre class="d h" id="diff"></pre>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <a class="btn btn-sm btn-primary" target="_blank" href="https://www.buymeacoffee.com/rath">
+                Buy me a coffee
+            </a>
+        </div>
+        <div class="col"></div>
+        <div class="col">
+            <a class="btn btn-sm btn-primary" href="https://github.com/ShivrajRath/jsonsortdiff"
+               target="_blank">Github</a>
+        </div>
+    </div>
+</div>
+<script src="./load_files.js"></script>
+</body>
 </html>
